@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  webclient:
+    image: feedlooker-webclient
+    build:
+      context: src/Clients/WebClient
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
